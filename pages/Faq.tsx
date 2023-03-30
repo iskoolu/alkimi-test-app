@@ -19,7 +19,7 @@ function Faq() {
       {faqContent.map((faqQues, id) => (
         <div className="mt-6" key={id}>
           <Accordion
-            quesId={faqQues.questionId}
+            questionId={faqQues.questionId}
             title={faqQues.question}
             content={faqQues.answer}
             expanded={expanded}
