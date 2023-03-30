@@ -104,3 +104,26 @@ export const faqContent = [
       "Node Army is a cloud-native blockchain infrastructure provider that empowers individuals and businesses to deploy and manage nodes, even without technical expertise. Our infrastructure is secure and scalable, with advanced features such as co-nodes, compounding, and managed nodes.",
   },
 ];
+
+export const menuLinks = [
+  {
+    path: "/",
+    label: "Services",
+  },
+  {
+    path: "/EnvStatement",
+    label: "Environment Statement",
+  },
+  {
+    path: "/Projects",
+    label: "Projects",
+  },
+  {
+    path: "/Nft",
+    label: " NFT",
+  },
+  {
+    path: "/Faq",
+    label: "FAQ",
+  },
+];

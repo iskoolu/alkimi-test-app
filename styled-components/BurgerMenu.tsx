@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
-import Link from "next/link";
 import { useRef } from "react";
 import useOutsideClick from "../customhooks/useOutsideClick";
+import DropDownLink from "./DropDownLink";
+import { menuLinks } from "@/staticdata/appContents";
 
 interface MenuProps {
   screenType: string;
@@ -57,56 +58,11 @@ function BurgerMenu({ screenType }: MenuProps) {
           }
         />
       </div>
-      <div
-        className={`origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-textwhite ring-1 ring-black ring-opacity-5 dropdown ${
-          dropdownOpen ? null : "hidden"
-        }`}
-        aria-labelledby="options-menu"
-        role="menu"
-      >
-        <div className="py-1" role="none">
-          <Link
-            href="/"
-            onClick={handleClickOutside}
-            className="uppercase block px-4 py-2 text-sm text-gray-700 hover:bg-footerBannerEnd hover:text-gray-900"
-            role="menuitem"
-          >
-            Services
-          </Link>
-          <Link
-            href="/Env_statement"
-            className="uppercase block px-4 py-2 text-sm text-gray-700 hover:bg-footerBannerEnd hover:text-gray-900"
-            role="menuitem"
-            onClick={handleClickOutside}
-          >
-            Environment Statement
-          </Link>
-          <Link
-            href="/Projects"
-            className="uppercase block px-4 py-2 text-sm text-gray-700 hover:bg-footerBannerEnd hover:text-gray-900"
-            role="menuitem"
-            onClick={handleClickOutside}
-          >
-            Projects
-          </Link>
-          <Link
-            href="/Nft"
-            className="uppercase block px-4 py-2 text-sm text-gray-700 hover:bg-footerBannerEnd hover:text-gray-900"
-            role="menuitem"
-            onClick={handleClickOutside}
-          >
-            NFT
-          </Link>
-          <Link
-            href="/Faq"
-            onClick={handleClickOutside}
-            className="uppercase block px-4 py-2 text-sm text-gray-700 hover:bg-footerBannerEnd hover:text-gray-900"
-            role="menuitem"
-          >
-            FAQ
-          </Link>
-        </div>
-      </div>
+      <DropDownLink
+        open={dropdownOpen}
+        links={menuLinks || []}
+        onClose={handleClickOutside}
+      />
     </div>
   );
 }
