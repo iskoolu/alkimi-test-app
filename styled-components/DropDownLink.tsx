@@ -18,8 +18,9 @@ function DropDownLink({ open, links, onClose }: DropDownProps) {
         role="menu"
       >
         <div className="py-1" role="none">
-          {links?.map((link) => (
+          {links?.map((link, id) => (
             <Link
+              key={id}
               href={link.path}
               onClick={() => onClose(false)}
               className="uppercase block px-4 py-2 text-sm text-gray-700 hover:bg-footerBannerEnd hover:text-gray-900"

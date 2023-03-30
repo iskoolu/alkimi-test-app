@@ -6,8 +6,9 @@ function Menu() {
   return (
     <div className="flex items-center h-[70vh]">
       <div className="py-1">
-        {menuLinks?.map((link) => (
+        {menuLinks?.map((link, id) => (
           <Link
+            key={id}
             href={link.path}
             role="menuitem"
             className="block px-4 py-2 uppercase text-sm "
