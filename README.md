@@ -28,9 +28,7 @@ Builds the app for production. The output files will be stored in the `out` dire
 `npm run start`   
 Starts the app in production mode. You must first run `npm run build` to build the app.   
 `npm run lint`   
-Lints the code using ESLint.   
-`npm run test`   
-Runs the test suite using Jest.   
+Lints the code using ESLint.  
 # Folder Structure  
 The project has the following folder structure:   
 ```
