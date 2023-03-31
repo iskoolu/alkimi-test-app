@@ -76,14 +76,14 @@ The project has the following folder structure:
 # Styled Components
 In this app, did not use any third party styled components packages like mui, etc. Instead of that we created our own styled components with Tailwind CSS. Available styled components below,
 
-- `BurgerMenu.tsx` is the Menu Icon placed in NavBar. When it's clicked it will change to close symbol(X). We added animation for that.  
-- `DropDownLink.tsx` is combine with dropdown menu and NextJs link components. We have to pass pathname and dropdown label as props.  
-- `Accordion.tsx` is have title and content. We have to pass that as props. It will return collapse style component.  
+- `BurgerMenu.tsx` is the Menu Icon placed in NavBar. When it's clicked it will change to close symbol(X).  
+- `DropDownLink.tsx` is combine with dropdown menu and NextJs link components. Pass pathname and dropdown label as props.  
+- `Accordion.tsx` is have pass title and content as props. It will return collapse style component.  
 
 # Custom Hooks
-It was created for if we want use one functionality in many components, we can create that functionality as hooks. Whereever we want to use that, just import and we can use that. In this app we have one custom hook,
+It was created to reuse in many components, this can be imported in the component to leverage the feature,
 
-- `useOutsideClick.tsx` is used for detect the click event outside of the element. We have to add ref with useRef hook to which element we want to detect and We have to pass the function which is what we want to perform if event is detected. 
+- `useOutsideClick.tsx` is used for detect the click event outside of the element. Add ref with useRef hook to which element is wants to detect and pass the function which is what action to be perform if event is detected. 
 
 
 # Deploying the App
