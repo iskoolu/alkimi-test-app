@@ -32,6 +32,8 @@ Lints the code using ESLint.
 # Folder Structure  
 The project has the following folder structure:   
 ```
+├── customhooks/
+│   └── useOutsideClick.tsx
 ├── pages/
 │   ├── EnvStatement.tsx
 │   ├── Faq.tsx
@@ -68,7 +70,21 @@ The project has the following folder structure:
 - `styles/` contains all the CSS styles used in the app.  
 - `public/` contains all the public assets used in the app, such as images and favicon.  
 - `styled-components/` contains all the styled components like dropdown, etc.  
-- `staticdata/` contains all the labels and contents used in the app.
+- `staticdata/` contains all the labels and contents used in the app.  
+- `customhooks/` contains the custom hooks which created with react and typescript used in the app.
+
+# Styled Components
+In this app, did not use any third party styled components packages like mui, etc. Instead of that we created our own styled components with Tailwind CSS. Available styled components below,
+
+- `BurgerMenu.tsx` is the Menu Icon placed in NavBar. When it's clicked it will change to close symbol(X). We added animation for that.  
+- `DropDownLink.tsx` is combine with dropdown menu and NextJs link components. We have to pass pathname and dropdown label as props.  
+- `Accordion.tsx` is have title and content. We have to pass that as props. It will return collapse style component.  
+
+# Custom Hooks
+It was created for if we want use one functionality in many components, we can create that functionality as hooks. Whereever we want to use that, just import and we can use that. In this app we have one custom hook,
+
+- `useOutsideClick.tsx` is used for detect the click event outside of the element. We have to add ref with useRef hook to which element we want to detect and We have to pass the function which is what we want to perform if event is detected. 
+
 
 # Deploying the App
 To deploy the app, you can use a service like Vercel, which supports Next.js out of the box. Simply connect your GitHub repository to Vercel and the app will be automatically deployed when you push changes to the repository. 
