@@ -5,6 +5,7 @@ interface SectionBoxProps {
   title: string;
   content: string[];
   icon: string;
+  trademark: boolean;
 }
 
 function SectionBox(props: SectionBoxProps) {
@@ -12,7 +13,7 @@ function SectionBox(props: SectionBoxProps) {
     <div className="text-textwhite">
       <p className="text-2xl lg:text-2xl uppercase mb-3">
         {props.title}
-        {props.title === "Co-Nodes" ? <sup>&#x00AE;</sup> : null}
+        {props.trademark ? <sup>&#x00AE;</sup> : null}
       </p>
       {props?.content?.map((para, id) => (
         <div key={id}>

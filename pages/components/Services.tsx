@@ -16,6 +16,7 @@ function Services() {
             title={appTextContents.coNodes.title}
             content={appTextContents.coNodes.content}
             icon={appTextContents.coNodes.icon}
+            trademark={appTextContents.coNodes.tradeMark}
           />
         </div>
         <div className="w:full lg:w-1/3 mt-12 lg:mt-0 text-textwhite">
@@ -24,6 +25,7 @@ function Services() {
             title={appTextContents.managedNodes.title}
             content={appTextContents.managedNodes.content}
             icon={appTextContents.managedNodes.icon}
+            trademark={appTextContents.managedNodes.tradeMark}
           />
         </div>
         <div className="w:full lg:w-1/3 text-textwhite">
@@ -38,6 +40,7 @@ function Services() {
               title={appTextContents.nodeAsService.title}
               content={appTextContents.nodeAsService.content}
               icon={appTextContents.nodeAsService.icon}
+              trademark={appTextContents.nodeAsService.tradeMark}
             />
           </div>
         </div>
@@ -49,6 +52,7 @@ function Services() {
             title={appTextContents.rewards.title}
             content={appTextContents.rewards.content}
             icon={appTextContents.rewards.icon}
+            trademark={appTextContents.rewards.tradeMark}
           />
         </div>
         <div className="w:full lg:w-1/3  mt-12 lg:mt-0 text-textwhite">
@@ -57,6 +61,7 @@ function Services() {
             title={appTextContents.buildTemplates.title}
             content={appTextContents.buildTemplates.content}
             icon={appTextContents.buildTemplates.icon}
+            trademark={appTextContents.buildTemplates.tradeMark}
           />
         </div>
         <div className="hidden lg:w-1/3 text-textwhite flex items-end"></div>
@@ -72,6 +77,7 @@ function Services() {
             title={appTextContents.bcScalability.title}
             content={appTextContents.bcScalability.content}
             icon={appTextContents.bcScalability.icon}
+            trademark={appTextContents.bcScalability.tradeMark}
           />
         </div>
       </div>

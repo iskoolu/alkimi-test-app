@@ -17,6 +17,7 @@ function EnvironmentStatement() {
             title={appTextContents.proofOfStake.title}
             content={appTextContents.proofOfStake.content}
             icon={appTextContents.proofOfStake.icon}
+            trademark={appTextContents.proofOfStake.tradeMark}
           />
         </div>
         <div className="w:full lg:w-1/3 mt-12 lg:mt-0 text-textwhite">
@@ -25,6 +26,7 @@ function EnvironmentStatement() {
             title={appTextContents.cloudComputing.title}
             content={appTextContents.cloudComputing.content}
             icon={appTextContents.cloudComputing.icon}
+            trademark={appTextContents.cloudComputing.tradeMark}
           />
         </div>
         <div className="hidden lg:block w-1/3 text-textwhite" />
@@ -40,6 +42,7 @@ function EnvironmentStatement() {
             title={appTextContents.nodeAsService.title}
             content={appTextContents.nodeAsService.content}
             icon={appTextContents.nodeAsService.icon}
+            trademark={appTextContents.nodeAsService.tradeMark}
           />
         </div>
       </div>
