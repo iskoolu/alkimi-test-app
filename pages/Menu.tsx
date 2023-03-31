@@ -22,7 +22,7 @@ function Menu() {
           className="block uppercase opacity-40 px-4 py-2 text-sm"
         >
           <div className="flex justity-between w-full">
-            <p>Pratform</p>
+            <p>Platform</p>
             <p className="absolute right-[25px] mt-[4px]">Coming soon</p>
           </div>
         </Link>

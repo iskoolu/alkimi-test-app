@@ -14,7 +14,7 @@ function BurgerMenu({ screenType }: MenuProps) {
   const [dropdownOpen, setDropDown] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const router = useRouter();
-  const myFunction = (e: React.MouseEvent<HTMLDivElement>) => {
+  const handleOnClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (screenType === "desktop") {
       setDropDown((prev) => !prev);
     } else {
@@ -41,7 +41,7 @@ function BurgerMenu({ screenType }: MenuProps) {
         id="options-menu"
         aria-haspopup="true"
         aria-expanded="true"
-        onClick={myFunction}
+        onClick={handleOnClick}
       >
         <div
           className={

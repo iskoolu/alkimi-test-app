@@ -111,7 +111,7 @@ export const menuLinks = [
     label: "Services",
   },
   {
-    path: "/EnvStatement",
+    path: "/EnvironmentStatement",
     label: "Environment Statement",
   },
   {
