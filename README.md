@@ -81,7 +81,7 @@ In this app, did not use any third party styled components packages like mui, et
 - `Accordion.tsx` is have title and content. We have to pass that as props. It will return collapse style component.  
 
 # Custom Hooks
-It was created for if we want use one functionality in many components, we can create that functionality as hooks. Whereever we want to use that, just import and we can use that. In this app we have one custom hook,
+It was created to reuse in many components, this can be imported in the component to leverage the feature,
 
 - `useOutsideClick.tsx` is used for detect the click event outside of the element. We have to add ref with useRef hook to which element we want to detect and We have to pass the function which is what we want to perform if event is detected. 
 
