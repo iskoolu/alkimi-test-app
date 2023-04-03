@@ -1,10 +1,9 @@
 # alkimi-test-app
-This is a sample Next.js app that demonstrates how to build a basic web application using Next.js. The app includes the following features:
+This is a Next.js app that demonstrates how to build a  web application using Next.js. The app includes the following features:
 
 - Routing with Next.js
 - Server-side rendering with Next.js
 - CSS styling with Tailwind CSS
-- TypeScript support
 
 # Getting Started
 To get started, first clone this repository:
